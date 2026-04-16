@@ -1,0 +1,14 @@
+
+.env.local
+.env.prod
+.env.*
+
+!/.env.production
+
+node_modules/
+dist/
+
+# Convex runtime cache (generated locally)
+.convex/
+
+coverage/
