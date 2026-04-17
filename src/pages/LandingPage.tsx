@@ -4,6 +4,8 @@ import { api } from "../../convex/_generated/api";
 
 import "../styles.css";
 
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/HqadRRbO43682FI5E18qjT";
+
 const LANDING_HTML = `
   <!-- SCROLL INDICATOR -->
   <div class="scroll-indicator">
@@ -397,13 +399,7 @@ export default function LandingPage() {
           hope: hopeRaw.length > 0 ? hopeRaw : undefined,
         });
 
-        const formBody = document.getElementById("form-body") as HTMLElement | null;
-        const successState = document.getElementById(
-          "success-state",
-        ) as HTMLElement | null;
-
-        if (formBody) formBody.style.display = "none";
-        if (successState) successState.style.display = "block";
+        window.location.assign(WHATSAPP_GROUP_URL);
       } catch (err) {
         console.error(err);
         alert("Registration failed. Please try again.");
