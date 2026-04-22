@@ -24,6 +24,25 @@ const LANDING_HTML = `
       <li><a href="#register">Register</a></li>
       <li><a href="#register" class="nav-cta">Reserve Spot →</a></li>
     </ul>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <a href="#" class="nav-logo">
+          <span class="logo-dot"></span>StartupVerse
+        </a>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#gain" class="mobile-nav-link">Why Attend</a></li>
+        <li><a href="#register" class="mobile-nav-link">Register</a></li>
+        <li><a href="#register" class="mobile-nav-cta">Reserve Spot →</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -349,6 +368,38 @@ export default function LandingPage() {
 
     els.forEach((el) => obs.observe(el));
     return () => obs.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const menuBtn = document.getElementById("mobile-menu-btn") as HTMLButtonElement | null;
+    const closeBtn = document.getElementById("mobile-menu-close") as HTMLButtonElement | null;
+    const overlay = document.getElementById("mobile-menu-overlay") as HTMLDivElement | null;
+    const mobileLinks = document.querySelectorAll(".mobile-nav-link, .mobile-nav-cta");
+
+    if (!menuBtn || !overlay) return;
+
+    const openMenu = () => {
+      overlay.classList.add("open");
+      menuBtn.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeMenu = () => {
+      overlay.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    };
+
+    menuBtn.addEventListener("click", openMenu);
+    closeBtn?.addEventListener("click", closeMenu);
+    mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+    return () => {
+      menuBtn.removeEventListener("click", openMenu);
+      closeBtn?.removeEventListener("click", closeMenu);
+      mobileLinks.forEach((link) => link.removeEventListener("click", closeMenu));
+      document.body.style.overflow = "";
+    };
   }, []);
 
   useEffect(() => {
