@@ -53,13 +53,13 @@ const LANDING_HTML = `
       <strong>The Official Product Launch of StartupVerse</strong>
     </p>
     <p class="hero-sub fu fu3" style="margin-bottom:0">
-      Free to attend. Saturday, 23 May 2026. The Assembly, Ogbomoso.
+      Free to attend. Thursday, 28 May 2026. The Assembly, Ogbomoso.
     </p>
 
     <div class="hero-meta fu fu4">
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Saturday, 23 May 2026
+        Thursday, 28 May 2026
       </div>
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
