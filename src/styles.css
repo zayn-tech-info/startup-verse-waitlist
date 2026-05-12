@@ -1056,6 +1056,72 @@ section {
 }
 
 /* ========================================
+   PARTNERS SECTION - MOBILE FIRST
+   ======================================== */
+.partners-section .section-inner {
+  max-width: 980px;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.partners-copy {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  .partners-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+.partner-card {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  background:
+    linear-gradient(180deg, rgba(34, 179, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(34, 179, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-teal);
+  background:
+    linear-gradient(180deg, rgba(34, 179, 255, 0.14), rgba(255, 255, 255, 0.04)),
+    rgba(255, 255, 255, 0.04);
+}
+
+/* ========================================
    GAIN CARDS - MOBILE FIRST
    ======================================== */
 .gain-grid {

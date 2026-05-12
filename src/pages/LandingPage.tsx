@@ -22,7 +22,7 @@ const LANDING_HTML = `
       <li><a href="#about">About</a></li>
       <li><a href="#gain">Why Attend</a></li>
       <li><a href="#register">Register</a></li>
-      <li><a href="#register" class="nav-cta">Reserve Spot →</a></li>
+      <li><a href="#register" class="nav-cta">Reserve Spot â†’</a></li>
     </ul>
     <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
       <span class="hamburger-line"></span>
@@ -40,7 +40,7 @@ const LANDING_HTML = `
         <li><a href="#about" class="mobile-nav-link">About</a></li>
         <li><a href="#gain" class="mobile-nav-link">Why Attend</a></li>
         <li><a href="#register" class="mobile-nav-link">Register</a></li>
-        <li><a href="#register" class="mobile-nav-cta">Reserve Spot →</a></li>
+        <li><a href="#register" class="mobile-nav-cta">Reserve Spot â†’</a></li>
       </ul>
     </div>
   </nav>
@@ -53,17 +53,17 @@ const LANDING_HTML = `
       <strong>The Official Product Launch of StartupVerse</strong>
     </p>
     <p class="hero-sub fu fu3" style="margin-bottom:0">
-      Free to attend. Thursday, 28 May 2026. The Assembly, Ogbomoso.
+      Free to attend. Wednesday, 6 May 2026. The Assembly, Ogbomoso.
     </p>
 
     <div class="hero-meta fu fu4">
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Thursday, 28 May 2026
+        Wednesday, 6 May 2026
       </div>
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        9:00 AM — 1:00 PM
+        9:00 AM â€” 1:00 PM
       </div>
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -71,12 +71,12 @@ const LANDING_HTML = `
       </div>
       <div class="hero-meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        Free — Admission
+        Free â€” Admission
       </div>
     </div>
 
     <div class="hero-btns fu fu5">
-      <a href="#register" class="btn-primary">Reserve my spot →</a>
+      <a href="#register" class="btn-primary">Reserve my spot â†’</a>
       <a href="#about" class="btn-outline">Learn more</a>
     </div>
   </header>
@@ -129,7 +129,7 @@ const LANDING_HTML = `
           <div class="section-eyebrow">About the Event</div>
           <h2 class="section-title">A Global Gathering of Aspiring and Early-Stage Founders</h2>
           <p class="section-body">
-            Connect with visionary founders, builders, and ecosystem leaders at the official unveiling of StartupVerse — the dedicated execution home designed to bridge the gap between African innovation and reality.
+            Connect with visionary founders, builders, and ecosystem leaders at the official unveiling of StartupVerse â€” the dedicated execution home designed to bridge the gap between African innovation and reality.
           </p>
         </div>
         <ul class="about-list">
@@ -147,13 +147,34 @@ const LANDING_HTML = `
           </li>
           <li>
             <span class="check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-            Exclusive access to beta testing — in the room, on the day
+            Exclusive access to beta testing â€” in the room, on the day
           </li>
           <li>
             <span class="check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             High-value connections with founders, students, and tech enthusiasts
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="partners-section" style="padding-top:0">
+    <div class="section-inner">
+      <div class="partners-header reveal">
+        <div class="section-eyebrow">Partners</div>
+        <h2 class="section-title">Built With Communities Driving Innovation</h2>
+        <p class="section-body partners-copy">
+          In partnership with communities and organizations shaping builders in our ecosystem.
+        </p>
+      </div>
+      <div class="partners-grid reveal">
+        <div class="partner-card">HultPrizeLautech</div>
+        <div class="partner-card">Women Techmakers</div>
+        <div class="partner-card">Google Developer's Group</div>
+        <div class="partner-card">ACOMMS</div>
+        <div class="partner-card">CowryWise</div>
+        <div class="partner-card">BlockChain Lautech</div>
       </div>
     </div>
   </section>
@@ -174,7 +195,7 @@ const LANDING_HTML = `
         <div class="gain-card">
           <div class="gain-num">02</div>
           <h4>Early Platform Access</h4>
-          <p>Be among the first to onboard the StartupVerse beta — a head start on the tools designed to power your execution journey.</p>
+          <p>Be among the first to onboard the StartupVerse beta â€” a head start on the tools designed to power your execution journey.</p>
         </div>
         <div class="gain-card">
           <div class="gain-num">03</div>
@@ -201,7 +222,7 @@ const LANDING_HTML = `
 
       <div class="form-card reveal">
         <div id="form-body">
-          <p class="form-sub">#BuildWithStartupVerse · Free admission · 23 May 2026</p>
+          <p class="form-sub">#BuildWithStartupVerse Â· Free admission Â· 6 May 2026</p>
 
           <form id="reg-form" novalidate>
             <div class="form-group">
@@ -267,11 +288,11 @@ const LANDING_HTML = `
 
             <div class="form-group">
               <label for="hope">What do you hope to take away? <span class="opt">(optional)</span></label>
-              <textarea id="hope" name="hope" placeholder="Tell us in a sentence or two — optional but appreciated"></textarea>
+              <textarea id="hope" name="hope" placeholder="Tell us in a sentence or two â€” optional but appreciated"></textarea>
             </div>
 
             <button type="submit" class="submit-btn" id="submit-btn">
-              Reserve my spot →
+              Reserve my spot â†’
             </button>
 
             <p class="free-note"><strong>100% free.</strong> No payment. Registration closes when seats are full.</p>
@@ -284,7 +305,7 @@ const LANDING_HTML = `
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <h3>You're registered!</h3>
-          <p>We'll see you on 23rd of May.<br>Check your email — we'll send you everything you need before the event.</p>
+          <p>We'll see you on 6th of May.<br>Check your email â€” we'll send you everything you need before the event.</p>
           <a class="wa-share" href="https://wa.me/?text=I%20just%20registered%20for%20The%20Startup%20Revolution%20by%20StartupVerse!%20It%27s%20free%20%E2%80%94%20join%20me.%20%23BuildWithStartupVerse" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Share with your network
@@ -300,7 +321,7 @@ const LANDING_HTML = `
       <a href="#" class="footer-logo">
         <span class="logo-dot"></span>StartupVerse
       </a>
-      <p class="footer-tag"><strong>#BuildWithStartupVerse</strong> · The Assembly, Ogbomoso, Oyo State</p>
+      <p class="footer-tag"><strong>#BuildWithStartupVerse</strong> Â· The Assembly, Ogbomoso, Oyo State</p>
       <div class="footer-social">
         <a href="#">Instagram</a>
         <a href="#">Twitter / X</a>
@@ -316,7 +337,7 @@ export default function LandingPage() {
   const html = useMemo(() => LANDING_HTML, []);
 
   useEffect(() => {
-    const target = new Date("2026-05-23T09:00:00").getTime();
+    const target = new Date("2026-05-06T09:00:00").getTime();
 
     const update = () => {
       const now = Date.now();
@@ -435,7 +456,7 @@ export default function LandingPage() {
         return;
       }
 
-      btn.textContent = "Submitting…";
+      btn.textContent = "Submittingâ€¦";
       btn.disabled = true;
 
       try {
@@ -454,7 +475,7 @@ export default function LandingPage() {
       } catch (err) {
         console.error(err);
         alert("Registration failed. Please try again.");
-        btn.textContent = "Reserve my spot →";
+        btn.textContent = "Reserve my spot â†’";
         btn.disabled = false;
       }
     };
@@ -465,4 +486,3 @@ export default function LandingPage() {
 
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
-
