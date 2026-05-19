@@ -10,6 +10,7 @@ export default defineSchema({
     role: v.string(),
     building: v.string(),
     source: v.string(),
+    community: v.string(),
     hope: v.optional(v.string()),
     createdAt: v.number(),
 

@@ -10,6 +10,7 @@ export const create = mutation({
     role: v.string(),
     building: v.string(),
     source: v.string(),
+    community: v.string(),
     hope: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
@@ -38,6 +39,7 @@ export const create = mutation({
       role: args.role,
       building: args.building,
       source: args.source,
+      community: args.community,
       hope: args.hope,
       createdAt: Date.now(),
       authTokenIdentifier: identity?.tokenIdentifier,

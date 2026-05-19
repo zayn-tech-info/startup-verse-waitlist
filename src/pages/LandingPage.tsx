@@ -287,6 +287,20 @@ const LANDING_HTML = `
             </div>
 
             <div class="form-group">
+              <label for="community">Which community did you come from? <span class="req">*</span></label>
+              <select id="community" name="community" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="HultPrizeLautech">HultPrizeLautech</option>
+                <option value="Women Techmakers">Women Techmakers</option>
+                <option value="Google Developer's Group">Google Developer's Group</option>
+                <option value="ACOMMS">ACOMMS</option>
+                <option value="CowryWise">CowryWise</option>
+                <option value="BlockChain Lautech">BlockChain Lautech</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+
+            <div class="form-group">
               <label for="hope">What do you hope to take away? <span class="opt">(optional)</span></label>
               <textarea id="hope" name="hope" placeholder="Tell us in a sentence or two - optional but appreciated"></textarea>
             </div>
@@ -439,6 +453,7 @@ export default function LandingPage() {
       const role = String(fd.get("role") ?? "").trim();
       const building = String(fd.get("building") ?? "").trim();
       const source = String(fd.get("source") ?? "").trim();
+      const community = String(fd.get("community") ?? "").trim();
       const hopeRaw = String(fd.get("hope") ?? "").trim();
 
       const emailOk = /^\S+@\S+\.\S+$/.test(email);
@@ -449,7 +464,8 @@ export default function LandingPage() {
         institution.length > 0 &&
         role.length > 0 &&
         building.length > 0 &&
-        source.length > 0;
+        source.length > 0 &&
+        community.length > 0;
 
       if (!requiredOk) {
         alert("Please fill all required fields with valid values.");
@@ -468,6 +484,7 @@ export default function LandingPage() {
           role,
           building,
           source,
+          community,
           hope: hopeRaw.length > 0 ? hopeRaw : undefined,
         });
 
